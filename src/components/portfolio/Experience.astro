@@ -5,18 +5,53 @@ import { Icon } from "astro-icon/components";
 
 const EXPERIENCE = [
   {
-    date: "2021 - Present",
-    title: "Software Development Coordinator",
-    company: "EFEELE.DEV",
+    date: "2024 - Presente",
+    title: "Técnico en Ciberseguridad",
+    company: "Instituto Técnico Superior Especializado (ITSE)",
     description:
-      "I lead the planning, development, and implementation of software projects to optimize administrative processes and improve digital services. I manage and provide support for technology platforms, coordinating development teams to deliver efficient solutions.",
+      "Actualmente cursando el 4to cuatrimestre. Enfocado en seguridad de redes, análisis de vulnerabilidades, pentesting y protección de sistemas digitales.",
   },
   {
-    date: "2019 - 2020",
-    title: "Software Development Coordinator",
-    company: "EFEELE.DEV",
+    date: "2025",
+    title: "Ethical Hacking",
+    company: "Cisco Networking Academy",
     description:
-      "I lead the planning, development, and implementation of software projects to optimize administrative processes and improve digital services. I manage and provide support for technology platforms, coordinating development teams to deliver efficient solutions.",
+      "Certificación en técnicas de hacking ético, pentesting y evaluación de seguridad de sistemas.",
+  },
+  {
+    date: "2025",
+    title: "Gestión de Amenazas Cibernéticas",
+    company: "Cisco Networking Academy",
+    description:
+      "Certificación en identificación, análisis y mitigación de amenazas cibernéticas avanzadas.",
+  },
+  {
+    date: "2025",
+    title: "Operating Systems Basics",
+    company: "Cisco Networking Academy",
+    description:
+      "Fundamentos de sistemas operativos, administración y seguridad en diferentes plataformas.",
+  },
+  {
+    date: "2024",
+    title: "Conceptos Básicos de Redes",
+    company: "Cisco Networking Academy",
+    description:
+      "Fundamentos de networking, protocolos TCP/IP, configuración de redes y diagnóstico.",
+  },
+  {
+    date: "2024",
+    title: "Introduction to Cybersecurity",
+    company: "Cisco Networking Academy",
+    description:
+      "Introducción a los conceptos fundamentales de ciberseguridad, amenazas y mejores prácticas.",
+  },
+  {
+    date: "2024",
+    title: "Cybersecurity Awareness - CAPC",
+    company: "Cisco Networking Academy",
+    description:
+      "Concienciación en ciberseguridad para la prevención y detección de ataques cibernéticos.",
   },
 ];
 ---
@@ -25,10 +60,10 @@ const EXPERIENCE = [
   <div class="flex flex-col pt-8 max-w-4xl mx-auto">
     <div class="flex gap-4 items-center justify-center">
       <Icon class="text-3xl dark:text-white text-blacktext" name="briefcase" />
-      <Heading text="Work" textGradient="Experience" level={2} />
+      <Heading text="Educación y" textGradient="Certificaciones" level={2} />
     </div>
 
-    <div class="relative max-md:mt-0 mt-8" aria-label="Professional experience">
+    <div class="relative max-md:mt-0 mt-8" aria-label="Educación y certificaciones">
       <ol class="relative mt-10">
         {
           EXPERIENCE.map((experience, index) => (
@@ -38,7 +73,7 @@ const EXPERIENCE = [
                 aria-labelledby={`experience-title-${index}`}
               >
                 <div
-                  class="flex flex-col gap-2  text-zinc-00 dark:text-zinc-300 md:col-span-3"
+                  class="flex flex-col gap-2 text-zinc-00 dark:text-zinc-300 md:col-span-3"
                   aria-describedby={`experience-title-${index}`}
                 >
                   <ExperienceItem {...experience} />
