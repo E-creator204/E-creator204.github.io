@@ -4,8 +4,8 @@ title: "Eduardo Vásquez | Mi Camino en Ciberseguridad 🚀🔒"
 description: "Estudiante de ciberseguridad apasionado por la tecnología, las redes y la seguridad de sistemas. Siempre aprendiendo, siempre explorando. ☕🔐"
 author: "Eduardo Vásquez"
 image:
-  url: "/images/eduardo-profile-new.webp"
-  alt: "Foto de perfil de Eduardo Vásquez"
+url: "/images/eduardo-profile-new.webp"
+alt: "Foto de perfil de Eduardo Vásquez"
 ---
 
 Tengo 25 años y actualmente estoy cursando el 4to cuatrimestre de la carrera de **Técnico en Ciberseguridad** en el **Instituto Técnico Superior Especializado (ITSE)**. Empecé en agosto de 2023, y desde entonces, cada día descubro algo nuevo que me apasiona aún más de este mundo digital.
