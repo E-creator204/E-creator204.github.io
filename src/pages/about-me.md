@@ -12,7 +12,7 @@ Tengo 25 años y actualmente estoy cursando el 4to cuatrimestre de la carrera de
 
 ## ¿Por qué Ciberseguridad? 🤔
 
-La decisión de estudiar ciberseguridad llegó en un momento complicado de mi vida. Necesitaba mantener mi mente ocupada y enfocada en algo productivo. Elegí ciberseguridad porque es un campo que está en **constante evolución**, siempre hay algo nuevo que aprender, y eso me garantiza que nunca me voy a aburrir. La tecnología está en la vanguardia, y quiero ser parte de eso.
+La decisión de estudiar ciberseguridad llegó en un momento complicado de mi vida. Necesitaba mantener mi mente ocupada y enfocada en algo productivo. Elegí ciberseguridad porque es un campo que está en **constante evolución**, siempre hay algo nuevo que aprender, y eso me garantiza que nunca me voy a aburrir. La tecnología está en la vanguardia y quiero ser parte de eso.
 
 Siempre me ha gustado la tecnología en general. Paso mucho tiempo viendo videos, leyendo artículos y probando cosas nuevas que van saliendo. Me emociona entender **cómo funcionan las cosas por dentro**. Lo que para muchos parece simple, en realidad conlleva múltiples configuraciones, capas de seguridad y un trabajo enorme detrás para que el usuario final tenga la mejor experiencia posible.
 
