@@ -4,7 +4,7 @@ title: "Eduardo Vásquez | Mi Camino en Ciberseguridad 🚀🔒"
 description: "Estudiante de ciberseguridad apasionado por la tecnología, las redes y la seguridad de sistemas. Siempre aprendiendo, siempre explorando. ☕🔐"
 author: "Eduardo Vásquez"
 image:
-  url: "/images/eduardo-profile.webp"
+  url: "/images/eduardo-profile-new.webp"
   alt: "Foto de perfil de Eduardo Vásquez"
 ---
 
