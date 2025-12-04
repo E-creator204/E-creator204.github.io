@@ -5,111 +5,34 @@ export interface Language {
 }
 
 export const languages: Record<string, Language> = {
-  angular: {
-    name: "Angular",
-    iconName: "angular",
+  cloudlinux: {
+    name: "CloudLinux",
+    iconName: "cloudlinux",
   },
-  astro: {
-    name: "Astro",
-    iconName: "astro",
+  cpanel: {
+    name: "cPanel",
+    iconName: "cpanel",
   },
-  bootstrap: {
-    name: "Bootstrap",
-    iconName: "bootstrap",
+  "kali-linux": {
+    name: "Kali Linux",
+    iconName: "kali-linux",
   },
-  cloudflare: {
-    name: "Cloudflare",
-    iconName: "cloudflare",
+  nessus: {
+    name: "Nessus",
+    iconName: "nessus",
   },
-  html: {
-    name: "HTML 5",
-    iconName: "html",
+  nmap: {
+    name: "Nmap",
+    iconName: "nmap",
   },
-  javascript: {
-    name: "JavaScript",
-    iconName: "javascript",
+  openssl: {
+    name: "OpenSSL",
+    iconName: "openssl",
   },
-  mongo: {
-    name: "MongoDb",
-    iconName: "mongo",
-  },
-  mysql: {
-    name: "MySQL",
-    className: "bg-[#f6ece1]!",
-    iconName: "mysql",
-  },
-  wordpress: {
-    name: "Wordpress",
-    iconName: "wordpress",
-  },
-  node: {
-    name: "Node.js",
-    iconName: "node",
-  },
-  tailwind: {
-    name: "Tailwind CSS",
-    iconName: "tailwind",
-  },
-  figma: {
-    name: "Figma",
-    iconName: "figma",
-  },
-  firebase: {
-    name: "Firebase",
-    iconName: "firebase",
-  },
-  markdown: {
-    name: "Markdown",
-    iconName: "markdown",
-  },
-  php: {
-    name: "PHP",
-    iconName: "php",
-  },
-  sass: {
-    name: "Sass",
-    iconName: "sass",
-  },
-  ts: {
-    name: "TypeScript",
-    iconName: "typescript",
-  },
-  git: {
-    name: "Git",
-    iconName: "git",
-  },
-  css: {
-    name: "CSS",
-    iconName: "css",
-  },
-  vercel: {
-    name: "Vercel",
-    iconName: "vercel",
-  },
-  netlify: {
-    name: "Netlify",
-    iconName: "netlify",
-  },
-  gatsby: {
-    name: "Gatsby",
-    iconName: "gatsby",
-  },
-  windsurf: {
-    name: "Windsurf",
-    iconName: "windsurf-logo",
-  },
-  cursor: {
-    name: "Cursor",
-    iconName: "cursor-ia",
-  },
-  deepseek: {
-    name: "DeepSeek",
-    iconName: "deepseek",
-  },
-  python: {
-    name: "Python",
-    iconName: "python",
-  },
+  owasp: {
+    name: "OWASP",
+    iconName: "owasp",
+
 };
 
 export const getLanguage = (lang: string): Language => {
