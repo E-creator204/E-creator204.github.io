@@ -21,6 +21,10 @@ export const languages: Record<string, Language> = {
     name: "Nessus",
     iconName: "nessus",
   },
+  html: {
+    name: "HTML 5",
+    iconName: "html",
+  },
   nmap: {
     name: "Nmap",
     iconName: "nmap",
@@ -36,5 +40,5 @@ export const languages: Record<string, Language> = {
 };
 
 export const getLanguage = (lang: string): Language => {
-  return languages[lang] || languages.cloudlinux;
+  return languages[lang] || languages.html;
 }; 
