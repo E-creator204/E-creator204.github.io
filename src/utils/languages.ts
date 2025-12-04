@@ -32,7 +32,7 @@ export const languages: Record<string, Language> = {
   owasp: {
     name: "OWASP",
     iconName: "owasp",
-
+  },
 };
 
 export const getLanguage = (lang: string): Language => {
