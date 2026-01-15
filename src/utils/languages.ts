@@ -26,8 +26,8 @@ export const languages: Record<string, Language> = {
     iconName: "linux",
   },
   nmap: {
-    name: "Nmap",
-    iconName: "nmap",
+    name: "html",
+    iconName: "html",
   },
   openssl: {
     name: "OpenSSL",
@@ -40,5 +40,5 @@ export const languages: Record<string, Language> = {
 };
 
 export const getLanguage = (lang: string): Language => {
-  return languages[lang] || languages.linux;
+  return languages[lang] || languages.html;
 }; 
