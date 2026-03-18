@@ -5,40 +5,36 @@ export interface Language {
 }
 
 export const languages: Record<string, Language> = {
-  cloudlinux: {
-    name: "CloudLinux",
-    iconName: "cloudlinux",
-  },
-  cpanel: {
-    name: "cPanel",
-    iconName: "cpanel",
-  },
-  "kali-linux": {
-    name: "Kali Linux",
-    iconName: "kali-linux",
-  },
-  nessus: {
-    name: "Nessus",
-    iconName: "nessus",
-  },
-  html: {
-    name: "linux",
+  linux: {
+    name: "Linux",
     iconName: "linux",
   },
-  nmap: {
-    name: "html",
-    iconName: "html",
+  wireshark: {
+    name: "Wireshark",
+    iconName: "wireshark",
   },
-  openssl: {
-    name: "OpenSSL",
-    iconName: "openssl",
+  metasploit: {
+    name: "Metasploit",
+    iconName: "metasploit",
   },
   owasp: {
     name: "OWASP",
     iconName: "owasp",
   },
+  zap: {
+    name: "OWASP ZAP",
+    iconName: "zap",
+  },
+  grafana: {
+    name: "Grafana",
+    iconName: "grafana",
+  },
+  html: {
+    name: "HTML 5",
+    iconName: "html",
+  },
 };
 
 export const getLanguage = (lang: string): Language => {
   return languages[lang] || languages.html;
-}; 
+};
