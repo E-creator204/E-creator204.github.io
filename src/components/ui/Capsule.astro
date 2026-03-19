@@ -44,9 +44,9 @@ const getIconContainerClasses = () => {
   }`;
 };
 
-const iconStyle = selectedLanguage.darkIcon
-  ? "width: 100%; filter: brightness(0) invert(1);"
-  : "width: 100%;";
+const iconWrapperStyle = selectedLanguage.darkIcon
+  ? "width: 100%; display: flex; filter: brightness(0) invert(1);"
+  : "width: 100%; display: flex;";
 ---
 
 {
@@ -67,10 +67,9 @@ const iconStyle = selectedLanguage.darkIcon
           role="img"
           aria-label={`${selectedLanguage.name} icon`}
         >
-          <Icon
-            style={iconStyle}
-            name={selectedLanguage.iconName}
-          />
+          <span style={iconWrapperStyle}>
+            <Icon class="w-full!" name={selectedLanguage.iconName} />
+          </span>
         </div>
         {selectedLanguage.name}
       </span>
@@ -86,10 +85,9 @@ const iconStyle = selectedLanguage.darkIcon
         role="img"
         aria-label={`${selectedLanguage.name} icon`}
       >
-        <Icon
-          style={iconStyle}
-          name={selectedLanguage.iconName}
-        />
+        <span style={iconWrapperStyle}>
+          <Icon class="w-full!" name={selectedLanguage.iconName} />
+        </span>
       </div>
       {selectedLanguage.name}
     </span>
