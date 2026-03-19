@@ -22,7 +22,7 @@ const baseClasses = {
   iconContainer: [
     "flex items-center justify-center",
     "aspect-square",
-    "bg-black rounded-full p-1",
+    "rounded-full p-1",
   ].join(" "),
 };
 
@@ -31,65 +31,4 @@ const sizeClasses = {
   md: "size-7",
 };
 
-const selectedLanguage = getLanguage(lang);
-
-const getContainerClasses = () => {
-  const textSize = selectedLanguage.name.length > 10 ? "text-sm" : "text-base";
-  return `${baseClasses.container} ${textSize}`;
-};
-
-const getIconContainerClasses = () => {
-  return `${baseClasses.iconContainer} ${sizeClasses[size]} max-lg:size-6 max-sm:size-5 ${
-    selectedLanguage.className ? selectedLanguage.className : ""
-  }`;
-};
-
-const iconWrapperStyle = selectedLanguage.darkIcon
-  ? "width: 100%; display: flex; filter: brightness(0) invert(1);"
-  : "width: 100%; display: flex;";
----
-
-{
-  linkEnabled ? (
-    
-      class="cursor-pointer"
-      href={`/blog/techs/${lang}`}
-      aria-label={`View articles about ${selectedLanguage.name}`}
-      role="link"
-    >
-      <span
-        class={getContainerClasses()}
-        role="presentation"
-        aria-hidden="true"
-      >
-        <div
-          class={getIconContainerClasses()}
-          role="img"
-          aria-label={`${selectedLanguage.name} icon`}
-        >
-          <span style={iconWrapperStyle}>
-            <Icon class="w-full!" name={selectedLanguage.iconName} />
-          </span>
-        </div>
-        {selectedLanguage.name}
-      </span>
-    </a>
-  ) : (
-    <span
-      class={`${getContainerClasses()} cursor-default`}
-      role="presentation"
-      aria-hidden="true"
-    >
-      <div
-        class={getIconContainerClasses()}
-        role="img"
-        aria-label={`${selectedLanguage.name} icon`}
-      >
-        <span style={iconWrapperStyle}>
-          <Icon class="w-full!" name={selectedLanguage.iconName} />
-        </span>
-      </div>
-      {selectedLanguage.name}
-    </span>
-  )
-}
+const selec
