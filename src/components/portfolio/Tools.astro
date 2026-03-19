@@ -1,29 +1,32 @@
 ---
-const allTools = [
-  "linux",
-  "wireshark",
-  "metasploit",
-  "owasp",
-  "zap",
-  "grafana",
+const tools = [
+  { name: "Kali Linux", icon: "🐉" },
+  { name: "Nessus", icon: "🔍" },
+  { name: "Wazuh", icon: "🛡️" },
+  { name: "Zabbix", icon: "📊" },
+  { name: "Grafana", icon: "📈" },
+  { name: "pfSense", icon: "🔥" },
+  { name: "WAF Safeline", icon: "🧱" },
+  { name: "Docker", icon: "🐳" },
 ];
-
-import Capsule from "../ui/Capsule.astro";
-
-type ToolVariant = "default" | "center";
-
-const baseClasses = "flex flex-wrap gap-4 max-lg:gap-1 grid-auto-efe";
-
-const variantClasses: Record<ToolVariant, string> = {
-  default: "cursor-default",
-  center: "justify-center cursor-default",
-};
-
-const { variant = "default", linkEnabled = false, size = "md" } = Astro.props;
-
-const classes = `${baseClasses} ${variantClasses[variant as ToolVariant]}`;
 ---
 
-<div class={classes}>
-  {allTools.map((tool) => <Capsule lang={tool} linkEnabled={linkEnabled} size={size} />)}
+<div class="flex flex-col gap-3 w-full">
+  {tools.map((tool) => (
+    <div class="flex flex-col gap-1">
+      <div class="flex items-center justify-between">
+        <span class="flex items-center gap-2 text-sm font-semibold dark:text-white text-blacktext">
+          <span>{tool.icon}</span>
+          {tool.name}
+        </span>
+        <span class="text-xs text-mint-500 font-bold">En uso</span>
+      </div>
+      <div class="w-full h-2 rounded-full bg-zinc-700/40 overflow-hidden">
+        <div
+          class="h-full rounded-full bg-gradient-to-r from-riptide-400 to-mint-400 animate-pulse"
+          style="width: 75%"
+        />
+      </div>
+    </div>
+  ))}
 </div>
