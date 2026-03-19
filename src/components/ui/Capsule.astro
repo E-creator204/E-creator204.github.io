@@ -31,4 +31,63 @@ const sizeClasses = {
   md: "size-7",
 };
 
-const selec
+const selectedLanguage = getLanguage(lang);
+
+const getContainerClasses = () => {
+  const textSize = selectedLanguage.name.length > 10 ? "text-sm" : "text-base";
+  return `${baseClasses.container} ${textSize}`;
+};
+
+const getIconContainerClasses = () => {
+  return `${baseClasses.iconContainer} ${sizeClasses[size]} max-lg:size-6 max-sm:size-5 ${
+    selectedLanguage.className ? selectedLanguage.className : ""
+  }`;
+};
+
+const iconContainerStyle = selectedLanguage.darkIcon
+  ? "background-color: white;"
+  : "background-color: black;";
+---
+
+{
+  linkEnabled ? (
+    
+      class="cursor-pointer"
+      href={`/blog/techs/${lang}`}
+      aria-label={`View articles about ${selectedLanguage.name}`}
+      role="link"
+    >
+      <span
+        class={getContainerClasses()}
+        role="presentation"
+        aria-hidden="true"
+      >
+        <div
+          class={getIconContainerClasses()}
+          style={iconContainerStyle}
+          role="img"
+          aria-label={`${selectedLanguage.name} icon`}
+        >
+          <Icon class="w-full!" name={selectedLanguage.iconName} />
+        </div>
+        {selectedLanguage.name}
+      </span>
+    </a>
+  ) : (
+    <span
+      class={`${getContainerClasses()} cursor-default`}
+      role="presentation"
+      aria-hidden="true"
+    >
+      <div
+        class={getIconContainerClasses()}
+        style={iconContainerStyle}
+        role="img"
+        aria-label={`${selectedLanguage.name} icon`}
+      >
+        <Icon class="w-full!" name={selectedLanguage.iconName} />
+      </div>
+      {selectedLanguage.name}
+    </span>
+  )
+}
