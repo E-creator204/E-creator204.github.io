@@ -47,7 +47,7 @@ const getIconContainerClasses = () => {
 
 {
   linkEnabled ? (
-    <a
+    
       class="cursor-pointer"
       href={`/blog/techs/${lang}`}
       aria-label={`View articles about ${selectedLanguage.name}`}
@@ -63,7 +63,10 @@ const getIconContainerClasses = () => {
           role="img"
           aria-label={`${selectedLanguage.name} icon`}
         >
-          <Icon class="w-full!" name={selectedLanguage.iconName} />
+          <Icon
+            class={`w-full! ${selectedLanguage.darkIcon ? "brightness-0 invert" : ""}`}
+            name={selectedLanguage.iconName}
+          />
         </div>
         {selectedLanguage.name}
       </span>
@@ -79,7 +82,10 @@ const getIconContainerClasses = () => {
         role="img"
         aria-label={`${selectedLanguage.name} icon`}
       >
-        <Icon class="w-full!" name={selectedLanguage.iconName} />
+        <Icon
+          class={`w-full! ${selectedLanguage.darkIcon ? "brightness-0 invert" : ""}`}
+          name={selectedLanguage.iconName}
+        />
       </div>
       {selectedLanguage.name}
     </span>
