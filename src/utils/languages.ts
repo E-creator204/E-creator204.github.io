@@ -8,7 +8,7 @@ export interface Language {
 export const languages: Record<string, Language> = {
   linux: {
     name: "Linux",
-    iconName: "linux",
+    iconName: "simple-icons:linux",
     darkIcon: true,
   },
   wireshark: {
