@@ -20,7 +20,7 @@ allPosts.sort(
   <div class="mx-auto max-w-7xl py-8">
     <div class="flex gap-4 items-center justify-center text-center">
       <Icon class="text-3xl dark:text-white text-blacktext" name="code" />
-      <Heading text="Projectos" textGradient="Completados" level={2} />
+      <Heading text="Proyectos" textGradient="Realizados" level={2} />
     </div>
 
     <p
@@ -30,10 +30,10 @@ allPosts.sort(
         class="bg-linear-to-r from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text"
         >la seguridad informática</b
       >
-      <br /> y convertir ese interés en  <b
+      <br /> y convertir ese interés en <b
         class="bg-linear-to-r from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text"
         >proyectos reales</b
-      > . Aquí te muestro algunos de los desarrollos en los que he aplicado hacking ético, redes y buenas prácticas de ciberseguridad.
+      >. Aquí te muestro algunos de los desarrollos en los que he aplicado hacking ético, redes y buenas prácticas de ciberseguridad.
       <b
         class="bg-linear-to-r from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text"
         >¡Échales un vistazo!</b
@@ -55,6 +55,8 @@ allPosts.sort(
           date={post.frontmatter.pubDate}
           languages={post.frontmatter.languages}
           image={post.frontmatter.image}
+          team={post.frontmatter.team}
+          category={post.frontmatter.category}
         />
       ))
     }
